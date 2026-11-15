@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rx Pro চেম্বার আল্ট্রা — সম্পূর্ণ A-Z ব্যবহারের নির্দেশিকা ও ম্যানুয়াল</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Hind Siliguri', sans-serif; scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+
+  <!-- Top Sticky Navigation -->
+  <header class="bg-sky-900 text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-2 flex-wrap">
+      <div class="flex items-center gap-2.5">
+        <span class="bg-white text-sky-900 font-black px-2.5 py-0.5 rounded text-base shadow">℞</span>
+        <div>
+          <h1 class="font-bold text-sm md:text-base leading-tight">Rx Pro চেম্বার আল্ট্রা — A-Z ব্যবহারের নির্দেশিকা</h1>
+          <p class="text-[11px] text-sky-200">ডাক্তার, সার্জন, বিশেষজ্ঞ ও চেম্বার সহকারীদের জন্য পূর্ণাঙ্গ গাইডলাইন</p>
+        </div>
+      </div>
+      <a href="index.html" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-3.5 py-1.5 rounded-lg text-xs shadow flex items-center gap-1.5">
+        <i class="fa-solid fa-arrow-left"></i> মূল প্রেসক্রিপশন অ্যাপে ফিরে যান
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-3 md:px-6 py-6 space-y-6">
+
+    <!-- Quick Table of Contents -->
+    <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-5">
+      <h2 class="font-bold text-base md:text-lg text-sky-950 mb-3 border-b pb-1.5 flex items-center gap-2">
+        <i class="fa-solid fa-list-ol text-sky-600"></i> সূচিপত্র (এক নজরে সব অধ্যায়)
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs font-semibold text-sky-800">
+        <a href="#sec-profile" class="p-2 rounded bg-sky-50 hover:bg-sky-100">১. ডাক্তার প্রফাইল, লোগো, স্বাক্ষর ও ফুটার সেটআপ</a>
+        <a href="#sec-assistant" class="p-2 rounded bg-purple-50 hover:bg-purple-100 text-purple-900">২. সহকারী ও ডাক্তারের মাঝে তথ্য আদান-প্রদান (অনলাইন ও অফলাইন)</a>
+        <a href="#sec-pads" class="p-2 rounded bg-teal-50 hover:bg-teal-100 text-teal-900">৩. কোন প্যাড মোড ও কোন বিভাগ কখন ব্যবহার করবেন</a>
+        <a href="#sec-print" class="p-2 rounded bg-emerald-50 hover:bg-emerald-100 text-emerald-900">৪. A4 প্রিন্টার ও 80mm থার্মাল প্রিন্টারে ১ পেজে প্রিন্ট কৌশল</a>
+        <a href="#sec-reports" class="p-2 rounded bg-amber-50 hover:bg-amber-100 text-amber-900">৫. রোগীর টেস্ট রিপোর্ট, এক্স-রে, ছবি ও PDF সংরক্ষণ</a>
+        <a href="#sec-whatsapp" class="p-2 rounded bg-green-50 hover:bg-green-100 text-green-900">৬. হোয়াটসঅ্যাপ ও সোশ্যাল মিডিয়ায় প্রেসক্রিপশন পাঠানো</a>
+        <a href="#sec-billing" class="p-2 rounded bg-indigo-50 hover:bg-indigo-100 text-indigo-900">৭. ভিজিট ফি, দৈনিক ক্যাশ হিসাব ও অ্যানালিটিক্স</a>
+        <a href="#sec-settings" class="p-2 rounded bg-rose-50 hover:bg-rose-100 text-rose-900">৮. সেটিংস, JSON ইমপোর্ট/এক্সপোর্ট ও ফুল ব্যাকআপ</a>
+        <a href="#sec-tips" class="p-2 rounded bg-slate-100 hover:bg-slate-200 text-slate-900">৯. জরুরি নিরাপত্তা ও পেশাদার চেম্বার টিপস</a>
+      </div>
+    </section>
+
+    <!-- 1. Doctor Profile, Logo, Signature & Footer -->
+    <section id="sec-profile" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-3">
+      <h2 class="text-base md:text-lg font-bold text-sky-900 border-b pb-2">
+        <i class="fa-solid fa-user-doctor mr-2 text-indigo-600"></i>১. ডাক্তার প্রফাইল, লোগো, স্বাক্ষর ও ফুটার কাস্টমাইজেশন
+      </h2>
+      <ul class="list-disc pl-5 space-y-1.5 text-xs md:text-sm text-slate-700">
+        <li><strong>ডাক্তারের নাম ও ডিগ্রি (২০+ কাস্টমাইজেবল লাইন):</strong> উপরের মেনু থেকে <b>"ডাঃ প্রফাইল"</b> বাটনে ক্লিক করুন। বাম পাশে বাংলায় ১০টি এবং ডান পাশে ইংরেজিতে ১০টি লাইন পাবেন। প্রয়োজনে <b>"+ বাংলায় নতুন লাইন"</b> বা <b>"+ ইংরেজিতে নতুন লাইন"</b> বাটনে ক্লিক করে আরও লাইন যোগ করতে পারবেন।</li>
+        <li><strong>লোগো আপলোড, সাইজ ও টেক্সট লোগো:</strong> প্রফাইল মডালের ৩ নম্বর অংশ থেকে <b>"লোগো আপলোড"</b> বাটনে ক্লিক করে ক্লিনিক বা চেম্বারের লোগো বসাতে পারবেন। লোগো না থাকলে <b>"লোগো টেক্সট"</b> ঘরে সংক্ষিপ্ত লেখা (যেমন: <code>DDC</code> বা <code>℞</code>) লিখতে পারবেন। স্লাইডার টেনে লোগো, হেডার ও ফুটার বড়-ছোট করা যাবে।</li>
+        <li><strong>ডিজিটাল স্বাক্ষর (আপলোড ও হাতের লেখার প্যাড):</strong> ৪ নম্বর অংশে <b>"স্বাক্ষর আপলোড"</b> বাটনে ক্লিক করে স্বাক্ষরের ছবি দিতে পারবেন, অথবা নিচের সাদা বক্সে আঙুল বা মাউস দিয়ে সরাসরি স্বাক্ষর এঁকে <b>"স্বাক্ষর সেভ"</b> বাটনে ক্লিক করলে সেটি প্রেসক্রিপশনে বসে যাবে।</li>
+        <li><strong>একাধিক চেম্বার ও ফুটার লেআউট:</strong> একাধিক চেম্বার যোগ করার পর উপরের চেম্বার ড্রপডাউন থেকে <b>"সকল চেম্বার একসাথে দেখান"</b> সিলেক্ট করলে ফুটারে চেম্বারগুলো ডান-বাম পাশাপাশি (মাঝখানে সময়সূচি ও হটলাইন বক্স ঠিক রেখে) অথবা উপর-নিচ (Stacked) আকারে সাজানো যাবে।</li>
+      </ul>
+    </section>
+
+    <!-- 2. Assistant & Doctor Online/Offline Sync -->
+    <section id="sec-assistant" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-3">
+      <h2 class="text-base md:text-lg font-bold text-purple-900 border-b pb-2">
+        <i class="fa-solid fa-user-nurse mr-2 text-purple-700"></i>২. সহকারী (Reception) ও ডাক্তারের মাঝে ২-ডিভাইস সংযোগ (বিপ শব্দসহ) ও QR স্ক্যান
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="p-3.5 rounded-lg bg-sky-50 border border-sky-200 space-y-1.5">
+          <h3 class="font-bold text-sky-950">ক) অনলাইন ২-ডিভাইস সরাসরি সংযোগ (WebRTC P2P + বিপ শব্দ):</h3>
+          <ol class="list-decimal pl-4 space-y-1 text-slate-700">
+            <li><b>ডাক্তারের ডিভাইসে:</b> <b>"সহকারী কিউ"</b> খুলে ভূমিকা হিসেবে <b>"ডাক্তারের ডিভাইস (Receiver)"</b> সিলেক্ট করুন, একটি রুম কোড (যেমন: <code>chamber101</code>) লিখে <b>"কানেক্ট করুন"</b> চাপুন।</li>
+            <li><b>সহকারীর ডিভাইসে:</b> <b>"সহকারী কিউ"</b> খুলে ভূমিকা হিসেবে <b>"সহকারীর ডিভাইস (Sender)"</b> সিলেক্ট করুন এবং একই কোড (<code>chamber101</code>) লিখে <b>"কানেক্ট করুন"</b> চাপুন।</li>
+            <li><b>সংকেত ও বিপ শব্দ:</b> ২টি ডিভাইস যুক্ত হওয়ার সাথে সাথেই একটি <b>ডাবল বিপ শব্দ</b> হবে এবং স্ট্যাটাস সবুজ হয়ে <b>"২ ডিভাইস সংযুক্ত (Live Connected)"</b> দেখাবে। এরপর সহকারী নতুন রোগী পাঠালেই ডাক্তারের ডিভাইসে <b>তিনবার নোটিফিকেশন বিপ শব্দ</b> বেজে রোগীর সিরিয়াল চলে আসবে।</li>
+          </ol>
+        </div>
+        <div class="p-3.5 rounded-lg bg-indigo-50 border border-indigo-200 space-y-1.5">
+          <h3 class="font-bold text-indigo-950">খ) ইন্টারনেট না থাকলে (অফলাইন QR কোড স্ক্যান ও টোকেন স্লিপ):</h3>
+          <ol class="list-decimal pl-4 space-y-1 text-slate-700">
+            <li><strong>১ ক্লিকে QR কোড তৈরি:</strong> অফলাইনে সহকারী রোগীর তথ্য দিয়ে <b>"ডাক্তারের কাছে পাঠান"</b> চাপলেই স্ক্রিনে ওই রোগীর একটি হাই-কনট্রাস্ট <b>QR কোড</b> তৈরি হবে (এবং প্রিন্ট করা টোকেন স্লিপেও থাকবে)।</li>
+            <li><strong>ডাক্তারের ডিভাইসে স্ক্যান:</strong> ডাক্তার তার মোবাইল বা ট্যাবের উপরের মেনু থেকে <b>"QR স্ক্যান"</b> বাটনে চাপ দিয়ে ক্যামেরা চালু করে সহকারীর স্ক্রিন বা টোকেনের QR কোডটি স্ক্যান করলেই <b>বিপ শব্দসহ</b> রোগীর সব তথ্য প্রেসক্রিপশনে বসে যাবে।</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Pad Modes & Specialty Departments -->
+    <section id="sec-pads" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-3">
+      <h2 class="text-base md:text-lg font-bold text-teal-900 border-b pb-2">
+        <i class="fa-solid fa-layer-group mr-2 text-teal-600"></i>৩. কোন প্যাড মোড ও কোন বিশেষায়িত বিভাগ কখন ব্যবহার করবেন
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+        <div class="p-3 border rounded-lg bg-slate-50">
+          <h4 class="font-bold text-slate-900 mb-1">প্যাড মোডসমূহ (উপরের সবুজ ড্রপডাউন):</h4>
+          <ul class="list-disc pl-4 space-y-1 text-slate-700">
+            <li><b>স্বাভাবিক মোড:</b> সাদা কাগজে ডাক্তারের হেডার, লোগো, প্রেসক্রিপশন ও ফুটারসহ পূর্ণাঙ্গ প্রিন্টের জন্য।</li>
+            <li><b>প্রি-প্রিন্টেড প্যাড মোড:</b> আপনার যদি আগে থেকেই ছাপানো (Pre-printed) প্রেসক্রিপশন প্যাড থাকে, তবে এই মোড সিলেক্ট করলে হেডার ও ফুটার হাইড হয়ে শুধু মাঝখানের ওষুধ ও রোগীর তথ্য ছাপানো প্যাডের ওপর বসবে।</li>
+            <li><b>ব্ল্যাঙ্ক প্যাড মোড:</b> মেডিকেল সার্টিফিকেট, ফিটনেস সনদ, ছুটির প্রত্যয়নপত্র বা হাতে লেখার জন্য।</li>
+            <li><b>ল্যাব টেস্ট স্লিপ মোড:</b> শুধু রোগীর পরীক্ষার (Investigations) তালিকা আলাদা স্লিপ হিসেবে প্রিন্ট দেওয়ার জন্য।</li>
+            <li><b>সার্জিক্যাল প্যাড মোড:</b> অপারেশনের তারিখ, সময়, হাসপাতাল, ওটি টিম, অ্যানেস্থেশিয়া ও সেলাই কাটার নির্দেশিকা প্রিন্টের জন্য।</li>
+          </ul>
+        </div>
+        <div class="p-3 border rounded-lg bg-amber-50/50">
+          <h4 class="font-bold text-amber-950 mb-1">বিশেষায়িত বিভাগসমূহ (উপরের কমলা ড্রপাউন):</h4>
+          <ul class="list-disc pl-4 space-y-1 text-slate-700">
+            <li><b>শিশু বিভাগ (Pediatrics):</b> শিশুর ওজন (kg) লিখলেই সিরাপ/ড্রপসের সঠিক ডোজ (<code>ml</code>) হিসাব হবে এবং <b>"+ প্রেসক্রিপশনে বসান"</b> চাপলে সরাসরি প্রেসক্রিপশনে চলে যাবে।</li>
+            <li><b>ডেন্টাল (Odontogram):</b> ৩২টি দাঁতের চার্টে ক্লিক করে আক্রান্ত দাঁত চিহ্নিত ও প্রসিডিউর লেখা যাবে।</li>
+            <li><b>চক্ষু (Eye):</b> চশমার পাওয়ার (SPH, CYL, AXIS, ADD, IPD) ও লেন্সের ধরন লেখার ছক।</li>
+            <li><b>গাইনি ও অবস:</b> LMP তারিখ দিলে স্বয়ংক্রিয়ভাবে EDD (সম্ভাব্য ডেলিভারি তারিখ) ও সপ্তাহ হিসাব হবে।</li>
+            <li><b>ফিজিওথেরাপি ও পুষ্টিবিদ:</b> ইলেক্ট্রোথেরাপি, ব্যায়াম এবং সকাল-দুপুর-বিকাল-রাতের ডায়েট চার্ট।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Printing Guide (A4 Single Page & Thermal 80mm) -->
+    <section id="sec-print" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-3">
+      <h2 class="text-base md:text-lg font-bold text-emerald-900 border-b pb-2">
+        <i class="fa-solid fa-print mr-2 text-emerald-600"></i>৪. বড় প্রিন্টার (A4 এক পেজ) ও থার্মাল প্রিন্টারে (80mm POS) প্রিন্ট করার কৌশল
+      </h2>
+      <ul class="list-disc pl-5 space-y-1.5 text-xs md:text-sm text-slate-700">
+        <li><strong>কম্পিউটার ও মোবাইলে A4 এক পেজে প্রিন্ট:</strong> উপরের নীল রঙের <b>"প্রিন্ট ও প্রিভিউ"</b> বাটনে ক্লিক করলে একটি এডিটেবল প্রিভিউ পেজ খুলবে। সেখানে প্রয়োজনে শেষ মুহূর্তের কোনো বানান সংশোধন করে <b>"এখনই প্রিন্ট / PDF সেভ"</b> বাটনে ক্লিক করুন। প্রিন্ট ডায়ালগে <b>Paper Size: A4</b> এবং <b>Margins: None (বা Minimum)</b> রাখলে ওষুধ বেশি হলেও ফন্ট স্বয়ংক্রিয়ভাবে অ্যাডজাস্ট হয়ে কঠোরভাবে <b>১ পেজেই</b> প্রিন্ট হবে।</li>
+        <li><strong>মোবাইল থেকে সরাসরি প্রিন্ট বা PDF:</strong> মোবাইলের Chrome ব্রাউজার থেকে প্রিন্ট বাটনে চাপলে <b>"Save as PDF"</b> সিলেক্ট করে পিডিএফ সেভ করতে পারবেন অথবা Wi-Fi / OTG কেবল দিয়ে প্রিন্টারে সরাসরি প্রিন্ট দিতে পারবেন।</li>
+        <li><strong>80mm POS থার্মাল প্রিন্টারে প্রিন্ট:</strong> ডান পাশের <b>"টুলস"</b> বাটনে ক্লিক করে <b>"80mm POS থার্মাল মোড"</b> অন করে দিন। এরপর প্রিন্ট দিলে পুরো প্রেসক্রিপশনটি ছোট রিসিপ্ট পেপারের উপযোগী সিঙ্গেল কলাম ফরম্যাটে প্রিন্ট হবে।</li>
+      </ul>
+    </section>
+
+    <!-- 5. Patient Reports & Gallery -->
+    <section id="sec-reports" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-2">
+      <h2 class="text-base md:text-lg font-bold text-amber-900 border-b pb-2">
+        <i class="fa-solid fa-images mr-2 text-amber-600"></i>৫. রোগীর টেস্ট রিপোর্ট, এক্স-রে, ছবি ও PDF সংরক্ষণাগার
+      </h2>
+      <p class="text-xs md:text-sm text-slate-700">
+        উপরের <b>"রিপোর্ট ও ছবি"</b> বাটনে ক্লিক করে রোগীর এক্স-রে ফিল্ম, ইসিজি, আল্ট্রাসনোগ্রাম বা প্যাথলজি রিপোর্টের ছবি কিংবা PDF ফাইল আপলোড করে রাখুন। এগুলো রোগীর আইডি অনুযায়ী অফলাইন স্টোরেজে জমা থাকবে এবং যেকোনো সময় জুম করে দেখা বা ডাউনলোড করা যাবে।
+      </p>
+    </section>
+
+    <!-- 6. WhatsApp & Social Media Sharing -->
+    <section id="sec-whatsapp" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-2">
+      <h2 class="text-base md:text-lg font-bold text-green-900 border-b pb-2">
+        <i class="fa-brands fa-whatsapp mr-2 text-green-600"></i>৬. হোয়াটসঅ্যাপ ও সোশ্যাল মিডিয়ায় প্রেসক্রিপশন পাঠানো
+      </h2>
+      <p class="text-xs md:text-sm text-slate-700">
+        রোগীর <b>Phone</b> ঘরে ১১ ডিজিটের মোবাইল নম্বর লিখে উপরের সবুজ <b>হোয়াটসঅ্যাপ (<i class="fa-brands fa-whatsapp"></i>)</b> আইকনে ক্লিক করলে স্বয়ংক্রিয়ভাবে <code>+880</code> কোড যুক্ত হয়ে রোগীর নাম, তারিখ, সকল ওষুধের তালিকা ও পরামর্শসহ সুন্দর মেসেজ তৈরি হয়ে রোগীর হোয়াটসঅ্যাপ চ্যাটে চলে যাবে। এছাড়া প্রিন্ট প্রিভিউ থেকে PDF সেভ করে মেসেঞ্জার, ইমো বা ইমেইলেও পাঠানো যাবে।
+      </p>
+    </section>
+
+    <!-- 7. Billing, Accounts & Analytics -->
+    <section id="sec-billing" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-2">
+      <h2 class="text-base md:text-lg font-bold text-indigo-900 border-b pb-2">
+        <i class="fa-solid fa-hand-holding-dollar mr-2 text-emerald-600"></i>৭. ভিজিট ফি, দৈনিক ক্যাশ হিসাব ও অ্যানালিটিক্স
+      </h2>
+      <ul class="list-disc pl-5 space-y-1 text-xs md:text-sm text-slate-700">
+        <li><b>ফি ও হিসাব:</b> নতুন রোগী, পুরাতন/ফলো-আপ, রিপোর্ট দেখা বা ফ্রি রোগীর ফি নির্ধারণ করা যায়। রোগী কম দিলে কাস্টম ফি বসানো যায় এবং <b>"এক্সেল CSV ডাউনলোড"</b> বাটনে চাপলে প্রতিদিনের ক্যাশ রিপোর্ট এক্সেল ফাইলে নেমে যাবে।</li>
+        <li><b>অ্যানালিটিক্স:</b> নিচের মেনু থেকে <b>"অ্যানালিটিক্স"</b> ট্যাবে গেলে আজকের, চলতি সপ্তাহের, চলতি মাসের ও সর্বমোট রোগীর সংখ্যা, শীর্ষ রোগসমূহ এবং পুরুষ-মহিলা রোগীর অনুপাত দেখা যাবে।</li>
+      </ul>
+    </section>
+
+    <!-- 8. Settings, JSON Import/Export & Backup -->
+    <section id="sec-settings" class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 space-y-2">
+      <h2 class="text-base md:text-lg font-bold text-rose-900 border-b pb-2">
+        <i class="fa-solid fa-gear mr-2 text-rose-600"></i>৮. সেটিংস, JSON ইমপোর্ট/এক্সপোর্ট ও সম্পূর্ণ ব্যাকআপ
+      </h2>
+      <ul class="list-disc pl-5 space-y-1 text-xs md:text-sm text-slate-700">
+        <li><b>সেটিংস ও লাইব্রেরি:</b> নিচের <b>"সেটিংস"</b> বাটনে ক্লিক করে ঔষধ লাইব্রেরি, Chief Complaints, Past History, Diagnosis, Investigations, রোগ অনুযায়ী পূর্ণাঙ্গ টেমপ্লেট এবং সকল বিভাগের পপ-আপ প্রিসেট যোগ, এডিট (<i class="fa-solid fa-pen"></i>) ও ডিলিট (<i class="fa-solid fa-trash"></i>) করতে পারবেন।</li>
+        <li><b>JSON ইমপোর্ট ও এক্সপোর্ট:</b> প্রতিটি ট্যাবের উপরেই <b>JSON এক্সপোর্ট</b> ও <b>JSON ইমপোর্ট</b> বাটন রয়েছে, যাতে ভবিষ্যতে যেকোনো নতুন ওষুধ বা রোগের তালিকা JSON ফাইলের মাধ্যমে এক ক্লিকেই লোড করা যায়।</li>
+        <li><b>সম্পূর্ণ সিস্টেম ব্যাকআপ:</b> নিচের <b>"হিস্ট্রি"</b> ট্যাবে গিয়ে <b>"ব্যাকআপ নামান"</b> বাটনে ক্লিক করে নিয়মিত আপনার কম্পিউটার বা গুগল ড্রাইভে ব্যাকআপ ফাইল সেভ রাখুন।</li>
+      </ul>
+    </section>
+
+    <!-- 9. Safety & Best Practices -->
+    <section id="sec-tips" class="bg-slate-900 text-slate-100 rounded-xl shadow-md p-4 md:p-6 space-y-2">
+      <h2 class="text-base md:text-lg font-bold text-amber-400 border-b border-slate-700 pb-2">
+        <i class="fa-solid fa-shield-halved mr-2"></i>৯. গুরুত্বপূর্ণ সতর্কতা ও পরামর্শ
+      </h2>
+      <ul class="list-disc pl-5 space-y-1 text-xs md:text-sm text-slate-300">
+        <li>ব্রাউজারের "Clear Site Data / Cache" ক্লিয়ার করার আগে অবশ্যই <b>হিস্ট্রি > ব্যাকআপ নামান</b> থেকে JSON ব্যাকআপ ফাইলটি ডাউনলোড করে রাখবেন।</li>
+        <li>এই সফটওয়্যারটি সম্পূর্ণ অফলাইন-ফার্স্ট প্রযুক্তিতে তৈরি; একবার লোড হলে ইন্টারনেট ছাড়াই চেম্বারে নিরবচ্ছিন্নভাবে কাজ করবে।</li>
+        <li>চিকিৎসা সংক্রান্ত সকল সিদ্ধান্ত ও ডোজ কেবলমাত্র রেজিস্টার্ড চিকিৎসকের নিজস্ব পেশাগত বিবেচনার ওপর নির্ভরশীল।</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-xs text-slate-500 py-6 border-t bg-white">
+    Rx Pro Chamber Ultra Studio &copy; 2026 | Designed &amp; Developed by Rx Pro Studio Bangladesh
+  </footer>
+
+</body>
+</html>

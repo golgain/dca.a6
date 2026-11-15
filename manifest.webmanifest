@@ -1,0 +1,24 @@
+{
+  "name": "Rx Pro চেম্বার আল্ট্রা স্টুডিও (All-Specialty Medical & Surgical PWA)",
+  "short_name": "Rx Pro Ultra",
+  "description": "বাংলাদেশের সকল বিভাগের বিশেষজ্ঞ চিকিৎসক, সার্জন, ডেন্টাল, চক্ষু, গাইনি, শিশু, ফিজিও ও পুষ্টিবিদদের জন্য ১০০% অফলাইন ও রিয়েল ২-ডিভাইস লাইভ সিঙ্ক প্রেসক্রিপশন স্যুট",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0369a1",
+  "theme_color": "#0369a1",
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
